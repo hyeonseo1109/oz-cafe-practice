@@ -1,16 +1,16 @@
-import { useState } from "react";
+
 import "./App.scss";
-import data from "./assets/data";
 import Header from "./components/Header";
-import Menu from "./components/Menu";
 import { Route, Routes } from "react-router-dom";
+import Menu from "./components/Menu";
 import Cart from "./components/Cart";
+// import { useCart } from "./context/cartContext";
+// import { useMenu } from "./context/menuContext";
+//---Menu.jsx와 Cart.jsx에서 직접 useCart, useMenu를 쓰니까 App.jsx에서는 안받아도 됨
+
 
 function App() {
-  const [menu, setMenu] = useState(data.menu);
-  const [cart, setCart] = useState([]);
-  console.log(cart);
-
+  
   return (
     <div>
       <Header />
@@ -18,11 +18,11 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Menu menu={menu} cart={cart} setCart={setCart} />}
+            element={<Menu/>}
           />
           <Route
             path="/cart"
-            element={<Cart menu={menu} cart={cart} setCart={setCart} />}
+            element={<Cart />}
           />
         </Routes>
       </main>

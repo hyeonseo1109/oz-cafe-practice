@@ -6,9 +6,10 @@ import chocoLatte from './choco.png'
 import strawberryLatte from './strawberry.png'
 import bananaLatte from './banana.png'
 import greenTeaLatte from './greentea.png'
+import bonobono from './bonobono.png'
 
 const images =  {
-    americano, cafeLatte, vanillaLatte, cafeMocha, chocoLatte, strawberryLatte, bananaLatte, greenTeaLatte
+    americano, cafeLatte, vanillaLatte, cafeMocha, chocoLatte, strawberryLatte, bananaLatte, greenTeaLatte, bonobono
 }
 
 export default images

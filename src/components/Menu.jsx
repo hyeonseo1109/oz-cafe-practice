@@ -1,8 +1,12 @@
 import { useState } from "react";
 import Item from "./Item";
 import OrderModal from "./OrderModal";
+import { useCart } from "../context/cartContext";
+import { useMenu } from "../context/menuContext";
 
-function Menu({ menu, cart, setCart }) {
+function Menu() {
+  const {cart, setCart} = useCart();
+  const {menu } = useMenu();
   const [modalOn, setModalOn] = useState(false);
   const [modalMenu, setModalMenu] = useState(null);
   if (!menu)

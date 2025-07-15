@@ -1,6 +1,11 @@
 import data from "../assets/data";
+import { useCart } from "../context/cartContext";
+import { useMenu } from "../context/menuContext";
 
-function Cart({ menu, cart, setCart }) {
+function Cart() {
+  const { cart, setCart } = useCart();
+  const { menu } = useMenu();
+  
   if (!menu)
     return (
       <div style={{ textAlign: "center", margin: "80px" }}>

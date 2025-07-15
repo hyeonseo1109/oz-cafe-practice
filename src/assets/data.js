@@ -60,6 +60,13 @@ const menu = {
             price: 5200,
             img: images.greenTeaLatte
         },
+        {
+            id: 8,
+            name: '보노보노',
+            description: '너부리는 내일 나한테 까만 돌맹이를 줄 거야',
+            price: 4000,
+            img: images.bonobono
+        },
     ],
 }
 

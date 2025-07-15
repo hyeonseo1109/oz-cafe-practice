@@ -14,7 +14,7 @@ function OrderModal ({modalMenu, setModalOn, cart, setCart}) {
                         <div className='modal-item'>
                             <img src={modalMenu.img}/>
                             <div>
-                                <h3>{modalMenu.name}</h3>
+                                <h3 className={modalMenu.name === "보노보노" ? "bonobono" : ""}>{modalMenu.name}</h3>
                                 <div>{modalMenu.description}</div>
                             </div>
                         </div>
